@@ -1,53 +1,4 @@
-//
-//  ContentView.swift
-//  genesis
-//
-//  Created by ayman kiggundu on 05/03/2025.
-//
-
 import SwiftUI
-import CoreData
-
-struct ContentView: View {
-    var body: some View {
-        TabView {
-            HomeView()
-                .tabItem {
-                    Label("Home", systemImage: "house")
-                }
-            ChatView()
-                .tabItem {
-                    Label("Chat", systemImage: "message")
-                }
-            NotificationsView()
-                .tabItem {
-                    Label("Notifications", systemImage: "bell")
-                }
-            ProfileView()
-                .tabItem {
-                    Label("Profile", systemImage: "person")
-                }
-        }
-    }
-}
-
-struct HomeView: View {
-    var body: some View {
-        Text("Home View")
-    }
-}
-
-struct ChatView: View {
-    var body: some View {
-        Text("Chat View")
-    }
-}
-
-struct NotificationsView: View {
-    var body: some View {
-        Text("Notifications View")
-    }
-}
 
 struct ProfileView: View {
     var body: some View {
@@ -136,8 +87,8 @@ struct PrivacySettingsView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ProfileView()
     }
 }
